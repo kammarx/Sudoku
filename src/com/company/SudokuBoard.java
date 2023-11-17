@@ -12,6 +12,14 @@ public class SudokuBoard {
         }
     }
 
+    public int getCell(int row, int col){
+        return board[row][col];
+    }
+
+    public void setCell(int row,int col,int value){
+        board[row][col] = value;
+    }
+
     public void fillBoard(int[][] initialValues){
         if(initialValues.length != 9 || initialValues[0].length !=9){
             System.out.println("Invalid input for initial values. The array must be 9x9.");
